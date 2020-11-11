@@ -1,20 +1,26 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-header, footer {
-    border: 1px solid black;
-    height: 200px;
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
 
+header,
+footer {
+  border: 1px solid black;
+  height: 25%;
+  background: skyblue;
+  clear: both;
 }
 
 section {
-    width: 33.3333%;
-    height: 500px;
-    float: left;
-    border: 1px solid black;
-}
-
-footer {
-    clear: both;
+  width: 33.3333%;
+  height: 50%;
+  float: left;
+  border: 1px solid black;
+  background: yellow;
 }
