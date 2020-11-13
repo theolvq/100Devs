@@ -5,23 +5,31 @@
   header,
   footer {
     height: 20%;
-    clear: both;
+   
     border: 2px solid black;
   }
   
   section {
       border: 2px solid black;
-      float: left;
-      height: 30%;
+  }
+
+  .grid-container { 
+      height: 60vh;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr 1fr;
   }
 
   .top {
-      width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/2;
   }
   .left {
-      width: 33.333%;
+     grid-column: 1/2;
+     grid-row: 2/3;
   }
 
   .right {
-      width: 66.6666%;
+     grid-column: 2/4;
+     grid-row: 2/3;
   }
