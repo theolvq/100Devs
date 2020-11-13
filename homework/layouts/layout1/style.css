@@ -10,17 +10,23 @@ footer {
 }
 
 section {
-    border: 2px solid black;
-    float: left;
+  border: 2px solid black;
+  float: left;
 }
 
 .top {
-    width: 33.3333%;
-    height: 25%;
-
+  width: 33.3333%;
+  height: 25%;
 }
 
 .bottom {
-    width: 50%;
-    height: 35%;
+  width: 50%;
+  height: 35%;
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    background: blue;
+    clear: both;
+  }
 }
