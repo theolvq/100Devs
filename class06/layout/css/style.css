@@ -51,3 +51,18 @@ section {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+@media screen and (max-width: 600px) {
+  section {
+    background: green;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  section {
+    background: blue;
+  }
+
+  .mid {
+    display: none;
+  }
+}
