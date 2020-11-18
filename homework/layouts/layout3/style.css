@@ -5,17 +5,20 @@
   header,
   footer {
     height: 20%;
-    clear: both;
     border: 2px solid black;
   }
   
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+}
+
   section {
-      border: 2px solid black;
-      float: left;
-      height: 60%;
-      width: 20%;
+      border: 2px solid black; 
+      height: 60vh;
   }
 
   .wide {
-      width: 40%;
+    grid-column: 2/4;
   }
