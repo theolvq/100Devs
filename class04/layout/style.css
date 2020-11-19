@@ -25,12 +25,46 @@ section {
   background: yellow;
 }
 
+aside {
+  height: 50%;
+  width: 25%;
+  float: left;
+  border: 1px solid black;
+  background-color: purple;
+  display: none;
+}
 
+/* phones */
 @media (min-width: 320px) and (max-width: 480px) {
-  
-  section{
+  section {
     clear: both;
     width: 100%;
   }
-  
+
+  footer,
+  header {
+    height: 25%;
+  }
+}
+
+/* tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  section {
+    width: 50%;
+  }
+  section + section + section {
+    width: 100%;
+  }
+}
+
+/* big screens */
+@media (min-width: 1281px) {
+  section {
+    width: 25%;
+  }
+
+  aside {
+    display: inline;
+    float: left;
+  }
 }
