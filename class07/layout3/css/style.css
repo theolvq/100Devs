@@ -5,36 +5,48 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
-body {
-
-}
-
-
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
-
+  height: 50px;
+  background-color: black;
+  color: white;
 }
 
-footer {
+nav * {
+  float: left;
+  width: 10%;
+  color: white;
+  display: block;
+}
 
+nav ul {
+  width: 50%;
+}
+
+nav form {
+  width: 20%;
+}
+
+nav form input {
+  width: 100%;
 }
 
 /******************************************
