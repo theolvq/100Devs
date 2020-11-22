@@ -17,10 +17,12 @@ img {
   width: 32px;
   margin: 0 auto;
 }
-
+.donate {
+  float: right;
+}
 header {
   width: 100%;
-  background: skyblue;
+  background: white;
 }
 nav * {
   float: left;
@@ -49,7 +51,6 @@ section {
 }
 
 .square {
-  padding: 10% 0;
   background: #6699cc;
   height: 100px;
   width: 200px;
