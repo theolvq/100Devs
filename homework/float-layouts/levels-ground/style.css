@@ -22,9 +22,9 @@ img {
 }
 header {
   width: 100%;
-  background: white;
+  background: skyblue;
 }
-nav * {
+nav li {
   float: left;
 }
 li {
