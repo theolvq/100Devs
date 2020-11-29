@@ -16,6 +16,7 @@ font-family: 'Open Sans', sans-serif; */
 html {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 62.5%;
+	text-transform: capitalize;
 }
 
 body {
@@ -29,7 +30,7 @@ h3 {
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 4rem;
 }
 
 h2 {
@@ -62,5 +63,51 @@ nav ul {
 }
 
 nav li {
-	padding: 0.5rem 0.8rem;
+	padding: 0.5rem 2rem;
+}
+
+main {
+	min-height: 75vh;
+	max-height: 100vh;
+	background-image: url('https://github.com/Theo-Leveque/100Devs/blob/main/homework/flex-layouts/restaurant/img/cover-flipped.jpg?raw=true');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.top {
+	padding: 10vh 10vw;
+}
+.top h1 {
+	font-size: 6rem;
+}
+h1 span::before {
+	content: '\A';
+	white-space: pre;
+}
+
+.social-media {
+	display: flex;
+	justify-content: flex-start;
+}
+.social-media li {
+	padding: 2rem;
+}
+
+.search-form input {
+	padding: 1rem 1.5rem;
+	margin: 1rem;
+	appearance: none;
+	border-radius: 1rem;
+	border: 2px solid gray;
+}
+
+.search-form input[search] {
+	width: 40vw;
+	margin-right: 0;
+}
+
+.search-form input[button] {
+	margin-left: 0;
+}
+
+.about-us {
 }
