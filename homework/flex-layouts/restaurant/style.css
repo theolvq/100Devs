@@ -67,7 +67,7 @@ nav li {
 main {
 	min-height: 75vh;
 	max-height: 100vh;
-	background-image: url('https://github.com/Theo-Leveque/100Devs/blob/main/homework/flex-layouts/restaurant/img/cover-flipped.jpg?raw=true');
+	background-image: url('img/cover-flipped.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -113,7 +113,7 @@ button {
 .about-us {
 	min-height: 75vh;
 	max-height: 100vh;
-	background-image: url('https://github.com/Theo-Leveque/100Devs/blob/main/homework/flex-layouts/restaurant/img/red-goodness.jpg?raw=true');
+	background-image: url('img/red-goodness.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
