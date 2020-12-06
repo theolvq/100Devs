@@ -1,6 +1,7 @@
 const check = document.querySelector('#check');
 const result = document.querySelector('#placeToSee');
-check.addEventListener('click', () => {
+
+const dayTeller = () => {
 	const day = document.querySelector('#day').value.toLowerCase();
 	switch (day) {
 		case 'tuesday':
@@ -15,4 +16,6 @@ check.addEventListener('click', () => {
 			result.innerText = 'Just another work day!';
 			break;
 	}
-});
+};
+
+check.addEventListener('click', dayTeller);
