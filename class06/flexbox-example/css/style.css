@@ -1,0 +1,45 @@
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+header,
+footer {
+  height: 10vh;
+}
+
+main {
+  display: flex;
+  height: 20%;
+}
+
+section {
+  border: 3px solid black;
+  width: 20%;
+  height: 20%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

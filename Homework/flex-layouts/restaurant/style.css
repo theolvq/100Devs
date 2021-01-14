@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* font-family: 'Playfair Display', serif;
+font-family: 'Open Sans', sans-serif; */
+
+/* basic styles */
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 62.5%;
+	text-transform: capitalize;
+}
+
+body {
+	font-size: 1.5rem;
+	letter-spacing: -0.5;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Playfair Display', serif;
+	letter-spacing: 2;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+h2 {
+	font-size: 3.5rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/* layout */
+
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	padding: 0.5rem 0.8rem;
+}
+
+nav li {
+	padding: 0.5rem 2rem;
+}
+
+main {
+	min-height: 75vh;
+	max-height: 100vh;
+	background-image: url('img/cover-flipped.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.top {
+	padding: 10vh 10vw;
+}
+.top h1 {
+	font-size: 6rem;
+}
+h1 span::before {
+	content: '\A';
+	white-space: pre;
+}
+
+.social-media {
+	display: flex;
+	justify-content: flex-start;
+}
+.social-media li {
+	padding: 2rem;
+}
+
+.search-form input,
+button {
+	padding: 1rem 1.5rem;
+	margin: 1rem;
+	appearance: none;
+	border-radius: 0.5rem;
+	background: orange;
+	border: 0;
+}
+
+.search-form input[search] {
+	width: 40vw;
+	margin-right: 0;
+	background: white;
+}
+
+.search-form input[button] {
+	margin-left: 0;
+}
+
+.about-us {
+	min-height: 75vh;
+	max-height: 100vh;
+	background-image: url('img/red-goodness.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.about-us-content {
+	margin: 0 15% 0 35%;
+	padding: 12% 0 15% 0;
+}
+
+.about-us-content p {
+	line-height: 1.8;
+	padding-bottom: 1rem;
+}
+.about-us-content h2 {
+	width: 50%;
+	padding-bottom: 1.5rem;
+}
+.intro-title {
+	color: orange;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.menu {
+	padding: 5vh 0;
+	min-height: 100vh;
+}
+
+.menu-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.toggle-menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.toggle-menu li {
+	padding: 1.5rem;
+}
+
+.menu-container {
+	padding: 5vh 5vw;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr 1fr;
+	gap: 2vmax;
+}
+
+.menu-container img {
+	width: 20vw;
+}
+.hours * {
+	padding: 1rem;
+}
+
+.call * {
+	padding: 0.5rem;
+}
+
+.hours,
+.call {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.opening-times {
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.opening-times * {
+	padding: 10px;
+}
+.video {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.video i {
+	margin: 6rem;
+}
+
+.testimonials,
+.review-card {
+	width: 50vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.review-card p {
+	line-height: 1.8;
+}
+
+.review-card img {
+	width: 10vw;
+	border-radius: 50%;
+}
+
+.stars {
+	color: gold;
+}
