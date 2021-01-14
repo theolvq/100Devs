@@ -4,3 +4,10 @@ const winner = (str, num) =>
 
 // Day 02: create a function that takes in an array and console.log() the sum of the first value and the last value
 const sumFirstLast = array => console.log(array[0] + array[array.length - 1]);
+
+// Day 03: create a function that takes in a person's name and add the name to a names' list, let them know their position on the list. The list should be created outside of the function
+const userNames = ['Jack', 'John', 'Brad'];
+const addName = firstName => {
+	userNames.push(firstName);
+	return `You are number ${userNames.indexOf(firstName) + 1} on the list`;
+};
