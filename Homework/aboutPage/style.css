@@ -1,0 +1,53 @@
+/* layout */
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+/* general styles */
+body {
+  font-family: "Open Sans", sans-serif;
+  border: 3px solid rgba(72, 205, 49, 1);
+  margin: 5%;
+  padding: 3%;
+  background: rgba(135, 206, 235, 1);
+  color: rgb(240, 244, 239);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-weight: 700;
+  color: rgba(72, 205, 49, 1);
+  text-decoration: underline;
+}
+
+li:nth-child(2)::before,
+li:nth-child(3)::before {
+  content: "";
+  border: 1px solid gray;
+  margin: 1rem;
+}
+
+h1 {
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+p {
+  font-family: "Libre Baskerville", serif;
+  line-height: 1.75;
+  margin-bottom: 3rem;
+}
+
+img {
+  float: right;
+  height: 300px;
+}

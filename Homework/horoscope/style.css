@@ -1,0 +1,80 @@
+*,
+*::before,
+::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	font-size: 1.2rem;
+}
+
+html {
+	height: 100vh;
+	background: linear-gradient(#d33ddb, #27dbb7);
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+}
+
+h1 {
+	color: white;
+	font-size: 2.5rem;
+	text-align: center;
+	font-variant: small-caps;
+	text-transform: capitalize;
+}
+
+img {
+	height: 30vh;
+	opacity: 0.5;
+}
+form {
+	height: 20vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+input[type='button'] {
+	background: #27dbb7;
+	border: 0;
+	padding: 1vmin;
+	width: 70%;
+}
+
+input[type='date'] {
+	color: black;
+	border: 0;
+	font-size: 0.8rem;
+}
+label {
+	padding: 1px;
+	font-size: 0.8rem;
+}
+
+.horoscope {
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.horoscope p {
+	font-size: 1rem;
+	text-align: center;
+}
+
+.horoscope h2,
+.horoscope h3 {
+	font-variant: small-caps;
+	text-transform: capitalize;
+}

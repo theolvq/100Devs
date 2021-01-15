@@ -1,0 +1,292 @@
+/* url for discount bg https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Promo-Banner-Image.jpg?id=4553 */
+/* url for top bg https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/aeaeaeaeaeae.jpg */
+
+/* ----------------
+lookbook
+-------------------
+*/
+/* image one "https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Gallery-01.jpg */
+/* image two https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Masonry-03.jpg */
+/* image three https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Masonry-01.jpg */
+/* image four https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Gallery-04.jpg */
+/* image five https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Gallery-02.jpg */
+/* image six https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Masonry-02.jpg */
+
+/* stylist one https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Styler-01.jpg  */
+/* stylist two https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Styler-02.jpg */
+/* stylist three https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Styler-03.jpg*/
+
+/* ===============
+     Reset styles
+================== */
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: black;
+}
+html {
+	font-family: 'Roboto';
+	font-size: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+button {
+	font-family: 'Cinzel', serif;
+	text-transform: capitalize;
+	line-height: 1.8;
+}
+
+h1 {
+	font-size: 10rem;
+	font-weight: 100;
+	color: white;
+	line-height: 1;
+}
+
+h2 {
+	font-size: 4rem;
+	font-weight: 100;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+h4 {
+	font-size: 1.8rem;
+}
+
+p {
+	font-size: 1.5rem;
+	line-height: 1.8;
+}
+
+span {
+	font-size: 1.6rem;
+}
+
+/* basic layout */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	height: auto;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	gap: 2rem;
+}
+
+nav li {
+	padding: 0 10px;
+}
+
+.btn-black {
+	padding: 0.8rem;
+	color: white;
+	background: black;
+	border: 0;
+}
+
+.btn-white {
+	padding: 0.8rem;
+	color: black;
+	background: white;
+	border: 0;
+}
+
+.top {
+	height: 90vh;
+	padding-left: 5rem;
+	background: url('https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/aeaeaeaeaeae.jpg')
+		no-repeat center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.title-container {
+	width: 50%;
+}
+
+.title {
+	height: 50vh;
+	display: flex;
+	color: white;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding-bottom: 3rem;
+}
+
+.top-discount {
+	background: black;
+	color: white;
+	height: 30vh;
+	width: 20vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 1.5rem;
+}
+
+.feature-container {
+	height: 40vh;
+	padding: 5rem;
+	text-align: center;
+	display: flex;
+}
+
+.feature {
+	padding: 3rem;
+}
+
+.intro-video {
+	height: 50vh;
+	width: 100vw;
+	padding: 5rem;
+	display: flex;
+}
+
+.video-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.video-container img {
+	width: 40vw;
+}
+
+.stylists {
+	height: auto;
+	width: 100vw;
+	display: flex;
+	padding: 5rem;
+	gap: 2rem;
+}
+
+.stylist {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.caption-big {
+	background: black;
+	color: white;
+	font-size: 2rem;
+	padding: 1rem;
+	width: 80%;
+	text-align: center;
+}
+
+.caption-small {
+	background: black;
+	color: white;
+	font-size: 1.5rem;
+	padding: 1rem;
+	width: 80%;
+	text-align: center;
+}
+
+.color-day {
+	background: url('https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Promo-Banner-Image.jpg?id=4553')
+		no-repeat center;
+	background-size: cover;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 5rem;
+	gap: 3rem;
+	margin: 3rem;
+}
+
+.color-day span {
+	font-size: 2rem;
+	width: 25%;
+}
+
+.bold {
+	font-weight: 900;
+}
+
+.lookbook {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	width: 80vw;
+	height: 80vh;
+	gap: 2rem;
+}
+
+.img-one {
+	background: url('https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Gallery-01.jpg')
+		no-repeat center;
+	width: auto;
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+
+.img-two {
+	background: url('https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Masonry-03.jpg')
+		no-repeat center;
+	grid-column: 1/2;
+	grid-row: 2/4;
+}
+
+.img-three {
+	background: url('https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Masonry-01.jpg ')
+		no-repeat center;
+	grid-column: 2/3;
+	grid-row: 1/3;
+}
+
+.img-four {
+	background: url('https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Gallery-04.jpg ')
+		no-repeat center;
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+
+.img-five {
+	background: url('https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Gallery-02.jpg ')
+		no-repeat center;
+	grid-column: 3/4;
+	grid-row: 1/2;
+}
+
+.img-six {
+	background: url('https://ayesha.dropletthemes.com/wp-content/uploads/2019/08/Masonry-02.jpg')
+		no-repeat center;
+	grid-column: 3/4;
+	grid-row: 2/4;
+}

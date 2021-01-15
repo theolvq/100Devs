@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horoscope</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>What is your Horoscope today?</h1>
+    <img src="zodiac-circle.jpg" alt="">
+    <form>
+        <span>Enter your date of birth</span>
+        <input type="date" id="date">
+        <div class="radio">
+            <span></span>
+            <input type="radio" value="today" name="pick-day">
+            <label for="today" checked>today</label>
+            <input type="radio" value="yesterday" name="pick-day">
+            <label for="yesterday">yesterday</label>
+            <input type="radio" value="tomorrow" name="pick-day">
+            <label for="tomorrow">tomorrow</label>
+        </div>
+
+        <input type="button" id="check" value="Submit">
+
+    </form>
+    <section class="result">
+
+    </section>
+    <h2></h2>
+    <script src="horoscope-backup.js"></script>
+</body>
+
+</html>
