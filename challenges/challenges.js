@@ -11,3 +11,6 @@ const addName = firstName => {
 	userNames.push(firstName);
 	return `You are number ${userNames.indexOf(firstName) + 1} on the list`;
 };
+
+//Day 04: create a function that takes in an array of numbers and returns a new array containing only odd numbers.
+const oddOnly = array => array.filter(x => x % 2 !== 0);
