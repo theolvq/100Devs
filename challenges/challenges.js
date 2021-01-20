@@ -14,3 +14,14 @@ const addName = firstName => {
 
 //Day 04: create a function that takes in an array of numbers and returns a new array containing only odd numbers.
 const oddOnly = array => array.filter(x => x % 2 !== 0);
+
+// Day 05: create a function that takes in a number, console.log all numbers from 1 to that number but skip any number that when multiplied by 3 is divisible by 2.
+const sixAndTwo = n => {
+	for (let i = 1; i < +n; i++) {
+		if ((i * 3) % 2 !== 0) {
+			console.log(i);
+		} else {
+			('');
+		}
+	}
+};
