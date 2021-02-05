@@ -11,6 +11,9 @@ const url = 'https://api.nasa.gov/planetary/apod'
 
 btn.addEventListener('click', () => {
 	const date = document.querySelector('#input-date').value
+	image.src = ''
+	video.src = ''
+	console.log(date)
 	fetch(`${url}?api_key=${APIkey}&date=${date}`)
 		.then(res => res.json())
 		.then(data => {
@@ -18,9 +21,9 @@ btn.addEventListener('click', () => {
 			title.innerText = data.title
 			description.innerText = data.explanation
 			mediaDate.innerText = data.date
-			if (data.url.includes('jpg')) {
+			if (data.media_type === 'image') {
 				image.src = data.url
-			} else {
+			} else if ((data.media_type = 'video')) {
 				video.src = data.url
 			}
 		})
