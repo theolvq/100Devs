@@ -6,12 +6,12 @@ const image = document.querySelector('img')
 const video = document.querySelector('iframe')
 const description = document.querySelector('#description')
 const mediaDate = document.querySelector('#date')
-const date = document.querySelector('#input-date')
 const btn = document.querySelector('button')
 const url = 'https://api.nasa.gov/planetary/apod'
 
 btn.addEventListener('click', () => {
-	fetch(`${url}?api_key=${APIkey}&date=2020-12-29`)
+	const date = document.querySelector('#input-date').value
+	fetch(`${url}?api_key=${APIkey}&date=${date}`)
 		.then(res => res.json())
 		.then(data => {
 			console.log(data)
